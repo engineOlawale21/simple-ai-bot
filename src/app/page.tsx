@@ -2,7 +2,7 @@
 'use client'; // This directive makes it a Client Component
 
 import { useState, FormEvent, useEffect, useRef } from 'react';
-import { Send } from "lucide-react";
+import { LuSend } from "react-icons/lu";
 
 interface Message {
   role: 'user' | 'assistant';
@@ -107,7 +107,7 @@ export default function Home() {
           className="px-6 py-3 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 disabled:opacity-50"
           disabled={loading}
         >
-          <Send size={24}/>
+          <LuSend size={24}/>
         </button>
       </form>
     </div>
